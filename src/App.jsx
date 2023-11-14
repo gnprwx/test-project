@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 const Item = ({ children }) => {
-	const [complete, setOnComplete] = useState(false);
+	const [complete, setComplete] = useState(false);
 	const onCompletion = () => {
-		setOnComplete(!complete);
+		setComplete(!complete);
 	};
 	const completed = complete ? "item strike" : "item";
 	return (
